@@ -25,7 +25,7 @@ readonly BUILD_DIR="/tmp/vala_build"
 readonly PREFIX="/usr/local"
 # change these when newer versions are released
 readonly VALA_VER="0.48.6"
-readonly LANG_SERV_VER="0.48"
+readonly LANG_SERV_VER="tegra-latest"
 
 function cleanup () {
   rm -rf "$BUILD_DIR"
@@ -62,7 +62,7 @@ function fetch_source () {
   git clone --depth 1 --branch "$VALA_VER" \
     https://gitlab.gnome.org/GNOME/vala.git
   git clone --depth 1 --branch "$LANG_SERV_VER" \
-    https://github.com/benwaffle/vala-language-server.git
+    https://github.com/mdegans/vala-language-server.git
 }
 
 function bootstrap () {
