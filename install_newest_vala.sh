@@ -37,6 +37,7 @@ function ensure_build_dir () {
 
 function install_deps () {
   sudo apt-get update && sudo apt-get install -y --no-install-recommends \
+    autoconf \
     autoconf-archive \
     bison \
     build-essential \
@@ -48,7 +49,8 @@ function install_deps () {
     libgraphviz-dev \
     libjsonrpc-glib-1.0-dev \
     ninja-build \
-    python3-pip
+    python3-pip \
+    python3-setuptools
   # because vala-language-server needs a recent version of meson because
   # of use of compiler object on line 10 of main meson.build
   pip3 install --upgrade meson
