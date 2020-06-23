@@ -48,6 +48,7 @@ function install_deps () {
     libglib2.0-dev \
     libgraphviz-dev \
     libjsonrpc-glib-1.0-dev \
+    libtool \
     ninja-build \
     python3-pip \
     python3-setuptools
